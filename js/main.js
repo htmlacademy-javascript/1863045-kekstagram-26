@@ -108,4 +108,4 @@ function makePhotos(countPhotos){
 }
 
 const maxCountPhoto = 25;
-const photos = makePhotos(maxCountPhoto);
+makePhotos(maxCountPhoto);

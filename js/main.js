@@ -42,7 +42,7 @@ const NAMES = [
   'Ольга',
 ];
 
-const DESCRIPTION = [
+const DESCRIPTIONS = [
   'Гуляем с моим любимым котом',
   'Сегодня мой кот покусал кактус',
   'Наша поездка с котом к ветеринару',
@@ -70,7 +70,7 @@ const DESCRIPTION = [
   'Собираемся на речку',
 ];
 
-function generatingСomment(){
+function geNeratingСomment(){
   const randomId = getRandomInt(1, 99999);
   const randomAvatar = `img/avatar-${  getRandomInt(1, 6)  }.svg`;
   const randomMessage = MESSAGES[getRandomInt(0, MESSAGES.length - 1)];
@@ -85,7 +85,7 @@ function generatingСomment(){
 
 function getComments(){
   const randomCountComments = getRandomInt(1, 20);
-  const comments = Array.from({length: randomCountComments}, generatingСomment);
+  const comments = Array.from({length: randomCountComments}, geNeratingСomment);
   return comments;
 }
 
@@ -93,7 +93,7 @@ function makePhoto(count){
   return {
     id: count,
     url: `photos/${  count  }.jpg`,
-    description: DESCRIPTION[count - 1],
+    description: DESCRIPTIONS[count - 1],
     likes: getRandomInt(15, 200),
     comments: getComments(),
   };

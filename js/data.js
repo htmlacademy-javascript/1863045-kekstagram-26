@@ -87,6 +87,8 @@ function makePhotos(countPhotos){
 const MAX_COUNT_PHOTO = 25;
 const makePhotosArray =  makePhotos(MAX_COUNT_PHOTO);
 
-export function getPhotosArray() {
+function getPhotosArray() {
   return makePhotosArray;
 }
+
+export {getPhotosArray};

@@ -1,3 +1,3 @@
 import {getPhotosArray} from './data.js';
-import './create-picture.js';
+import './preview-picture.js';
 getPhotosArray();

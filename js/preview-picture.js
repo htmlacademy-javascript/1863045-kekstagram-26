@@ -15,7 +15,6 @@ const VISIBLE_COMMENT_COUNT = 5;
 for(let i = 0; i < picturesList.length; i++){
   const picture = picturesList[i];
   const photoComments = photos[i].comments;
-
   const createComments = function() {
     const test = socialComments.querySelectorAll('.social__comment');
     for (const tes of test) {
